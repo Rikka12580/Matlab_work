@@ -1,14 +1,11 @@
-% Finding the nontrivial root of 
-% f(x) = sin(x) - x^2
-% using the Simple Fixed-Point Iteration
 
 clear all
 
-x = -2   %initial guess
-Es = 0.1    %tolerance
-Ea = 1000;  %randomly large relative approximate error
+x = -2  
+Es = 0.1   
+Ea = 1000; 
 xold = x;   
-n = 0;      %iteration counter
+n = 0;    
 
 while Ea > Es
     x = 1/(exp(x)-x);
@@ -18,5 +15,5 @@ while Ea > Es
     n
     x
 end
-x  %the root
-n   %number of iterations
+x  
+n  
