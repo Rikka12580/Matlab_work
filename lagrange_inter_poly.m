@@ -1,20 +1,5 @@
 function [yi, ypi, P, D] = neville(x, y, xi)
 
-% NEVILLE Interpolation using Neville's Method
-%    NEVILLE(X,Y,XI) interpolates to find YI, the value of
-%    the underlying function Y at the point XI, using Neville's
-%    Method.  X and Y must be vectors of length N.
-%
-%    [YI,YPI] = NEVILLE() also returns the interpolated derivative
-%    YPI.
-%
-%    [YI,YPI,P,D] = NEVILLE() also returns the polynomial table
-%    P and derivative polynomial table D calculated for the last XI.
-
-% Joe Henning - Fall 2011
-
-% An Iterative Method of Numerical Differentiation
-% D. B. Hunter
 
 n = length(x);
 
